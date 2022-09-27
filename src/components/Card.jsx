@@ -40,6 +40,6 @@ export function CardInfo({data, setCard, horaInicial, horaFinal}) {
 }
 function RowTable({index, d}){
     console.log(index)
-    return <tr key={index}><td>{ index+1 }</td><td>{  new Date(d.fecha).toLocaleDateString() }</td><td>{ d.isEntrada ? 'Activo' : 'Desconectado'}</td>
+    return <tr key={index}><td>{ index+1 }</td><td>{  new Date(d.fecha).toLocaleDateString() +' '+new Date(d.fecha).toLocaleTimeString()}</td><td>{ d.isEntrada ? 'Activo' : 'Desconectado'}</td>
     </tr>
 }

@@ -57,9 +57,11 @@ function sumHorario(horas, horaInicial, horaFinal){
     })
     newHoras.map((respuesta, index)=>{
 
-        if((index+1)%2 > 0){
+        if((index+1)%2 > 0 && newHoras.length > index+1){
             let x = horas[index+1].fecha-respuesta.fecha
             datSuma = x
+        }else if((index+1)%2 > 0){
+            datSuma = Date.now()-newHoras[index].fecha
         }
     })
     return datSuma
