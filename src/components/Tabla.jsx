@@ -26,7 +26,7 @@ export function Tabla({informacion, horaInicial, horaFinal}){
                         <img className="rounded-circle" onClick={()=> {
                             setCard(true)
                             setIndiceInfo(informacion[index])
-                        }} style={{width:'50px'}} src={'http://localhost:3000/'+dat.avatar}/>
+                        }} style={{width:'50px'}} src={'https://chatsw2.azurewebsites.net/'+dat.avatar}/>
                     </td>
                     <td>{dat.nombre}</td>
                     <td>{dat.correo}</td>

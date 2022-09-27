@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table';
 export function CardInfo({data, setCard, horaInicial, horaFinal}) {
   return (
     <Card style={{ width: '360px'}} className="d-flex align-items-center">
-      <Card.Img variant="top" className="text-center rounded-circle m-2" style={{width:'100px'}} src={'http://localhost:3000'+data.avatar} />
+      <Card.Img variant="top" className="text-center rounded-circle m-2" style={{width:'100px'}} src={'https://chatsw2.azurewebsites.net/'+data.avatar} />
       <Card.Body>
         <Card.Title>{data.nombre}</Card.Title>
         <div>
